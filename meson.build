@@ -106,8 +106,12 @@ foreach dep : ['libjpeg', 'zlib']
 endforeach
 
 if host_machine.system() != 'windows'
-  foreach dep : ['rt', 'm']
+  foreach dep : ['m']
     spice_server_deps += compiler.find_library(dep)
+  endforeach
+
+  foreach dep : ['rt']
+    spice_server_deps += compiler.find_library(dep, required : false)
   endforeach
 else
   foreach dep : ['ws2_32', 'shlwapi']
