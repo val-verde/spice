@@ -19,6 +19,7 @@
 #ifndef REDS_PRIVATE_H_
 #define REDS_PRIVATE_H_
 
+#include <array>
 #include <spice/protocol.h>
 #include <spice/stats.h>
 

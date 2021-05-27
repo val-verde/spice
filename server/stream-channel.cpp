@@ -17,6 +17,7 @@
 */
 #include <config.h>
 
+#include <array>
 #include <common/generated_server_marshallers.h>
 #include <common/recorder.h>
 #include <spice/stream-device.h>
