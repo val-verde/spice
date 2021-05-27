@@ -2,7 +2,7 @@
 # project definition
 #
 project('spice', 'c', 'cpp',
-        version : run_command('build-aux/git-version-gen', meson.source_root() + '/.tarball-version', check : true).stdout().strip(),
+        version : '0.15.0',
         license : 'LGPLv2.1',
         meson_version : '>= 0.49',
         default_options : ['buildtype=debugoptimized',
